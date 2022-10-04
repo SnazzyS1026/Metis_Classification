@@ -9,6 +9,6 @@ Through EDA, many of the features were found to be left skewed.  For us not to v
 ## Tuning Hyperparameters
 RandomizedSearchCV was first to narrow down ranges of values for optimizing hyperparameters.  GridSearchCV was then used to pinpoint the set of the most optimal hyperparameters to maximize scores, model efficiency, and minimize overfitting.
 ## Feature selection
-With over 20+ features, feature selection was used to reduce the complexity of our model, and possibly in some way, overfitting of our trained data.  After feature selection, 11 were deemed important for prediction.
+With over 20+ features, feature selection was used to reduce the complexity of our model, and likely some overfitting as well.  After feature selection, 11 were deemed important for prediction.
 # Final model
 The best performing model was found to be Random Forest.  For a more detailed look into the entire process, refer to the notebooks attached.
