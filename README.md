@@ -5,7 +5,7 @@ Data was webscraped off of the NBA official website and includes all seasons fro
 ## Class Imbalance
 To address the slight imbalance in class distributions, random oversampling was done to increase the minority class (target class) to level with the majority class.
 ## Feature Engineering
-Through EDA, many of the features were found to be left skewed.  For us not to violate any of the normality assumptions of Gaussian NB, log transformation was performed on the top 5 features.  Scores for the Gaussian NB did indeed rose nicely after the transformation. However, Gaussian NB was ultimately not the final model chosen, and log transformation was then unnecessarily making our model more complex. Consequently, no log transformation was done on the features in the final model.
+Through EDA, many of the features were found to be left skewed.  For us not to violate any of the normality assumptions of Gaussian NB, log transformation was performed on the top 5 features.  Scores for the Gaussian NB did indeed rise nicely after the transformation. However, Gaussian NB was ultimately not the final model chosen, and log transformation was then unnecessarily making our model more complex. Consequently, no log transformation was done on the features in the final model.
 ## Tuning Hyperparameters
 RandomizedSearchCV was first to narrow down ranges of values for optimizing hyperparameters.  GridSearchCV was then used to pinpoint the set of the most optimal hyperparameters to maximize scores, model efficiency, and minimize overfitting.
 ## Feature selection
